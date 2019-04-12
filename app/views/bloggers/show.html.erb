@@ -1,0 +1,4 @@
+<h1> Bloggers Name: <%= @blogger.name %></h1>
+<p> Bloggers Bio: <%= @blogger.bio %></p>
+<p> Bloggers Age: <%= @blogger.age %></p>
+<p> Total Likes: <%= @blogger.posts.map {|post| post.likes}.inject(:+) %> </p>
